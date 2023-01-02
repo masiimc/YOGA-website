@@ -1,0 +1,25 @@
+* , *::before , *::after{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    direction: ltr;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{list-style-type: none;}
+main , header , nav , div , article , ul , li , section , footer , aside , figure{
+    display: flex;
+    flex-flow: wrap;
+}
+/* *::before , *::after{
+    content: "";
+} */

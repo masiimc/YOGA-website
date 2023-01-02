@@ -1,0 +1,433 @@
+main , main>.head , main>.head>section , .head>.nav , .head>.nav>figure>a ,
+.head>.nav .dropdown>li , footer>.row , #studio , .dropdown>li>a , header>section:last-of-type>.row>* ,
+#studio>.row , .class , .class>section , .class>section:first-of-type>* , .gallery>.row>section:first-of-type>* ,
+.timetable , .timetable>.row , .timetable>.row>section>figure , .timetable>.row>section>figure>img ,
+.timetable>.row>section>section , .timetable>.row>section>section>article , .breath , .breath>.row , .teachers ,
+.teachers>.row>section , .teachers>.row , .teachers>.row>section:first-of-type>* , .teachers>.row>section>.item>figure , 
+.teachers>.row>section>.item>figure>a>img , .teachers>.row>section>.item>div{
+    width: 100%;
+} 
+.head>.nav>.menu>ul>li:first-of-type>a ,
+.head>.nav .dropdown{
+    background-color: rgb(38, 29, 59);
+}
+/* main */
+/* start header****** */
+main>.head{
+    height: 100vh;
+    background: url(../img/art-home-yora.jpg) fixed center 60%;
+    background-size: 100% 170%;
+}
+.head>.nav{
+    height: 100px;
+    padding: 15px 45px;
+}
+.head>.nav>figure{
+    width: 80px;
+    margin-right: 20px;
+}
+.head>.nav>figure>a{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head>.nav>.menu>ul{
+    align-items: center;
+    color: rgba(38, 29, 59, 0.719);
+    position: relative;
+}
+.head>.nav>.menu>ul>li{
+    margin: 0 10px;
+    position: relative;
+}
+.head>.nav>.menu>ul>li>a , .dropdown>li>a{
+    text-transform: capitalize;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.head>.nav>.menu>ul>li:first-of-type>a{
+    color: #fff;
+}
+/* .dropdown */
+.head>.nav .dropdown{
+    position: absolute;
+    top: 40px;
+    width: 240px;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 1px 1px 5px  rgba(38, 29, 59, 0.767);
+    visibility: hidden;
+    opacity: 0;
+}
+.head>section:last-of-type{
+    padding-bottom: 50px;
+    padding-right: 50px;
+    justify-content: end;
+}
+header>section:last-of-type>.row{
+    width: 30%;
+    align-content: center;
+}
+header>section:last-of-type>.row>*{
+    margin-bottom: 20px;
+    color: rgba(38, 29, 59, 0.719);
+}
+header>section:last-of-type>.row>h1{
+    font-weight: 100;
+    font-size: 50px;
+    color: rgb(38, 29, 59);
+}
+header>section:last-of-type>.row>p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+header>section:last-of-type>.row>a , .class>a , .teachers>.row>a{
+    width: auto;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid rgb(38, 29, 59);
+    transition: 0.5s;
+}
+
+/*start studio *********/
+#studio{ padding: 50px 80px;}
+#studio>.row{
+    justify-content: space-between;
+}
+#studio>.row>div:first-of-type{
+    width: 30%;
+    padding: 10px;
+    align-items: flex-start;
+}
+#studio>.row>div>h1{
+    font-weight: lighter;
+    font-size: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    color: rgb(38, 29, 59);
+    border: 1px solid #fff;
+}
+#studio>.row>div>h1::before , #studio>.row>div>h1::after{
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: rgb(38, 29, 59);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+#studio>.row>div>h1::before{bottom: 4px;}
+#studio>.row>div:last-of-type{
+    width: 60%;
+    padding: 10px;
+}
+#studio>.row>div>p{
+    line-height: 25px;
+    color: rgba(38, 29, 59, 0.719);
+}
+/* class *************/
+.class{
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #d8d8d8;
+}
+.class>section:first-of-type{
+    padding: 40px 0;
+    align-content: flex-start;
+}
+.class>section:first-of-type>* , .gallery>.row>section:first-of-type>*{
+    text-align: center;
+}
+.class>section>h2 , .teachers>.row>section:first-of-type>h2 ,
+.gallery>.row>section>h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    color: rgb(38, 29, 59);
+}
+.class>section>p , .teachers>.row>section:first-of-type>p , 
+.gallery>.row>section>p{
+    color: rgba(38, 29, 59, 0.719);
+}
+.class>section>article{
+    width: 25%;
+    color: #fff;
+    height: 340px;
+    background-color: rgb(38, 29, 59);
+    padding: 60px 40px;
+    align-content: flex-start;
+}
+.class>section>article>h2{
+    font-size:25px ;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.class>section>article>p{ line-height: 30px;}
+.class>section>article:first-of-type{
+    background: url(../img/y086.jpg);}
+.class>section>article:nth-of-type(3){
+    background: url(../img/y080.jpg);}
+.class>section>article:nth-of-type(6){
+    background: url(../img/y006.jpg);}
+.class>section>article:nth-of-type(8){
+    background: url(../img/y093.jpg);}
+.class>section>article:first-of-type , .class>section>article:nth-of-type(3) ,
+.class>section>article:nth-of-type(6) , .class>section>article:nth-of-type(8){
+    background-size: cover;
+    background-position: center center;
+}
+.class>a , .teachers>.row>a{
+    padding: 15px 25px;
+    margin: 40px;
+    color: rgba(38, 29, 59, 0.719);
+}
+
+/* timetable ***************/
+.timetable{
+    padding: 80px;
+    background-color: #f1f1f1;
+}
+.timetable>.row>section:first-of-type{
+    width: 60%;
+}
+.timetable>.row>section>h2{
+    color: rgb(38, 29, 59);
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom:40px ;
+}
+.timetable>.row>section:last-of-type{
+    width: 40%;
+    align-content: flex-start;
+    color: rgba(38, 29, 59, 0.719);
+    padding: 0 40px;
+}
+.timetable>.row>section>p{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.timetable>.row>section>section{
+    padding:30px 30px 30px 50px;
+}
+.timetable>.row>section>section>article{
+    margin-bottom: 40px;
+}
+.timetable>.row>section>section>article>h3{
+    color: rgb(38, 29, 59);
+    font-weight: lighter;
+}
+.timetable>.row>section>section>article>p{
+    line-height: 25px;
+}
+/* Breath ******************/
+.breath{
+    background: url(../img/y048.jpg) center 30% fixed;
+    background-size: 100%;
+    height: 80vh;
+    align-items: center;
+}
+.breath>.row{
+    justify-content: center;
+}
+.breath>.row>div{
+    background-color: rgb(38, 29, 59);
+    color: #fff;
+    width: 33%;
+    padding: 30px 0;
+    justify-content: center;
+}
+.breath>.row>div>h2{
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.breath>.row>div>span{
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 20px;
+}
+
+/* teachers */
+.teachers{
+    background-color: #f1f1f1;
+    padding: 80px;
+}
+.teachers>.row{
+    justify-content: center;
+}
+.teachers>.row>section:first-of-type>*{text-align: center;}
+.teachers>.row>section:first-of-type>p{
+    margin-bottom:20px ;
+}
+.teachers>.row>section>.item{
+    width: 25%;
+    padding: 20px 0;
+    justify-content: center;
+}
+.teachers>.row>section>.item>figure{
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+.teachers>.row>section>.item>figure>a{
+    width: 50%;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.teachers>.row>section>.item>figure>a>img{border-radius: 50%;}
+.teachers>.row>section>.item>h3{
+    font-weight: lighter;
+    color: rgb(38, 29, 59);
+    margin-bottom: 20px;
+}
+.teachers>.row>section>.item>p{
+    color: rgba(0, 0, 0, 0.384);
+    margin-bottom: 20px;
+}
+.teachers>.row>section>.item>div{
+    justify-content: center;
+}
+.teachers>.row>section>.item>div>span{
+    width: 32px;
+    height: 32px; 
+    margin: 0 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+.teachers>.row>section>.item>div>span>a>i{
+    font-size: 25px;
+    align-self: center;
+    color:rgb(38, 29, 59);
+    transition: 0.5s;
+}
+
+.teachers>.row>a{
+    margin-bottom: 0;
+}
+/* offer **************/
+/* gallery ****************/
+.gallery{
+    width: 100%;
+}
+.gallery>.row>{
+    width: 100%;
+}
+.gallery>.row>section:first-of-type{
+    padding: 80px 180px 50px;
+}
+.gallery>.row>section{
+    width: 100%;
+}
+.gallery>.row>section>p{
+    line-height: 30px;
+}
+.gallery>.row>section:last-of-type>div{
+    width: 12.5%;
+    height: 180px;
+}
+.gallery>.row>section>div:first-child{
+    background-image: url(../img/y0003-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(2){
+    background-image: url(../img/y004-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(3){
+    background-image: url(../img/y025-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(4){
+    background-image: url(../img/y048-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(5){
+    background-image: url(../img/y011-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(6){
+    background-image: url(../img/y082-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(7){
+    background-image: url(../img/y078-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(8){
+    background-image: url(../img/y022.jpg);
+}
+.gallery>.row>section>div:nth-child(9){
+    background-image: url(../img/y028.jpg);
+}
+.gallery>.row>section>div:nth-child(10){
+    background-image: url(../img/y051-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(11){
+    background-image: url(../img/y052-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(12){
+    background-image: url(../img/y007-384x384.jpg);
+}
+.gallery>.row>section>div:nth-child(13){
+    background-image: url(../img/y091.jpg);
+}
+.gallery>.row>section>div:nth-child(14){
+    background-image: url(../img/y0009.jpg);
+}
+.gallery>.row>section>div:nth-child(15){
+    background-image: url(../img/y0861.jpg);
+}
+.gallery>.row>section>div:nth-child(16){
+    background-image: url(../img/y0801.jpg);
+}
+.gallery>.row>section>div{
+    background-size:cover;
+}
+/* footer ********************/
+footer{
+    background-color: rgb(38, 29, 59);
+    width: 100%;
+    color: #fff;
+    padding: 80px 80px 0;
+}
+footer>.row>*{
+    width: 25%;
+    padding: 20px;
+    align-content: flex-start;
+}
+footer>.row>*>h3{
+    font-weight: lighter;
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer>.row>section>strong{
+    font-weight: lighter;
+    width: 100%;
+}
+footer>.row>section:first-of-type>p{margin: 20px 0;}
+footer>.row>section>address{font-style: normal;}
+footer>.row>ul>li>* , footer>section>*{
+   line-height: 35px;
+}
+footer>.row>section:last-of-type>p{
+    margin-bottom: 20px;
+}
+footer>.row>section>input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-left: 6px solid #ddd;
+}
+footer>.row>section>a{
+    background-color: rgba(68, 137, 184, 0.788);
+    padding: 6px 15px;
+}
+
+footer>div:last-of-type{
+    border-top: 1px solid rgba(255, 255, 255, 0.432);
+    padding: 15px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.473);
+}
