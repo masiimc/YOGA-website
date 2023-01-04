@@ -10,7 +10,7 @@ it' wriiten by me and here is the code and live demo.
 
 🤖i used css & HTMl
 
- 🍄Available on :
+ 🍄Available on :  https://masiimc.github.io/YOGA-website/
 
  my social account :
  
